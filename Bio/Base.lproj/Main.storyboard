@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aec-xa-XZS" customClass="SAButton" customModule="Bio" customModuleProvider="target">
+                                <rect key="frame" x="40" y="676" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nmb-ah-zqF"/>
+                                </constraints>
+                                <state key="normal" title="Законченые проекты"/>
+                                <connections>
+                                    <action selector="sucsess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="all-DN-eQY"/>
+                                    <segue destination="Wbu-9n-ymr" kind="show" identifier="se2" id="S3k-Ag-XnH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGA-ZV-mwD" customClass="SAButton" customModule="Bio" customModuleProvider="target">
+                                <rect key="frame" x="40" y="746" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VdX-Bk-3Af"/>
+                                </constraints>
+                                <state key="normal" title="Не законченные"/>
+                                <connections>
+                                    <action selector="inProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fT5-Ou-vhw"/>
+                                    <segue destination="Wbu-9n-ymr" kind="show" identifier="se3" id="Oso-z1-JYq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e5q-kP-D49" customClass="SAButton" customModule="Bio" customModuleProvider="target">
+                                <rect key="frame" x="40" y="816" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="r6p-2q-8qD"/>
+                                </constraints>
+                                <state key="normal" title="Идеи"/>
+                                <connections>
+                                    <action selector="ideas:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VJy-l2-6Sw"/>
+                                    <segue destination="Wbu-9n-ymr" kind="show" identifier="se4" id="uBZ-CB-kUg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lq0-62-76U" customClass="SAButton" customModule="Bio" customModuleProvider="target">
+                                <rect key="frame" x="40" y="606" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D8L-FT-zXh"/>
+                                </constraints>
+                                <state key="normal" title="Обо мне"/>
+                                <connections>
+                                    <action selector="about:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UuK-dO-XKa"/>
+                                    <segue destination="Wbu-9n-ymr" kind="show" identifier="se1" id="ynk-PT-kae"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion" translatesAutoresizingMaskIntoConstraints="NO" id="Tk2-sr-Yn2">
+                                <rect key="frame" x="132" y="233" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Frr-ht-V1P"/>
+                                    <constraint firstAttribute="height" constant="150" id="kjM-Tl-eVr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About myself" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mjp-Mr-KA2">
+                                <rect key="frame" x="60" y="408" width="294" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29.5" id="FbF-qS-SDX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoNastaliqUrdu-Bold" family="Noto Nastaliq Urdu" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mjp-Mr-KA2" secondAttribute="trailing" constant="40" id="1Rq-qL-Oi5"/>
+                            <constraint firstItem="Tk2-sr-Yn2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="9sf-J1-CZ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lq0-62-76U" secondAttribute="trailing" constant="40" id="FAP-01-ORJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e5q-kP-D49" secondAttribute="trailing" constant="40" id="FPc-CS-Oty"/>
+                            <constraint firstItem="aec-xa-XZS" firstAttribute="top" secondItem="Lq0-62-76U" secondAttribute="bottom" constant="20" id="JWI-Gf-MwC"/>
+                            <constraint firstAttribute="bottom" secondItem="e5q-kP-D49" secondAttribute="bottom" constant="30" id="KMo-Zj-m2D"/>
+                            <constraint firstItem="Mjp-Mr-KA2" firstAttribute="top" secondItem="Tk2-sr-Yn2" secondAttribute="bottom" constant="25" id="SDJ-Ld-REd"/>
+                            <constraint firstItem="Lq0-62-76U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="W4M-B6-iBl"/>
+                            <constraint firstItem="e5q-kP-D49" firstAttribute="top" secondItem="WGA-ZV-mwD" secondAttribute="bottom" constant="20" id="bxb-P1-4xj"/>
+                            <constraint firstItem="Mjp-Mr-KA2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="e7T-GF-4OL"/>
+                            <constraint firstItem="Tk2-sr-Yn2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iR3-5j-mwd"/>
+                            <constraint firstItem="WGA-ZV-mwD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="idE-kw-ESE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WGA-ZV-mwD" secondAttribute="trailing" constant="40" id="lhG-FK-9OE"/>
+                            <constraint firstItem="e5q-kP-D49" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uBA-Mz-15C"/>
+                            <constraint firstAttribute="trailing" secondItem="aec-xa-XZS" secondAttribute="trailing" constant="40" id="uUP-Nq-kIi"/>
+                            <constraint firstItem="aec-xa-XZS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="vMH-Eg-5Fk"/>
+                            <constraint firstItem="WGA-ZV-mwD" firstAttribute="top" secondItem="aec-xa-XZS" secondAttribute="bottom" constant="20" id="zUd-hy-Lqm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="132.5"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="Kha-9e-aiI">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Wbu-9n-ymr" customClass="SecondViewController" customModule="Bio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zbD-4Q-PRO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8b-20-Iw1">
+                                <rect key="frame" x="60" y="94" width="294" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="mup-sl-VCa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahx-4M-4MV" customClass="SAButton" customModule="Bio" customModuleProvider="target">
+                                <rect key="frame" x="40" y="796" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VHP-js-aZJ"/>
+                                </constraints>
+                                <state key="normal" title="Назад"/>
+                                <connections>
+                                    <action selector="goBack:" destination="Wbu-9n-ymr" eventType="touchUpInside" id="jBx-5p-Lhj"/>
+                                    <segue destination="tXX-PR-EzB" kind="unwind" unwindAction="unwindSegueToMainScreenWithSeque:" id="DNv-eb-TBv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq6-Eg-tIs">
+                                <rect key="frame" x="60" y="234" width="294" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="yzj-vC-RmC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="s8b-20-Iw1" firstAttribute="leading" secondItem="zbD-4Q-PRO" secondAttribute="leadingMargin" constant="40" id="JoG-4n-LjZ"/>
+                            <constraint firstItem="s8b-20-Iw1" firstAttribute="top" secondItem="zbD-4Q-PRO" secondAttribute="topMargin" constant="50" id="ch0-qz-WR4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s8b-20-Iw1" secondAttribute="trailing" constant="40" id="fKl-I3-hjy"/>
+                            <constraint firstAttribute="bottom" secondItem="ahx-4M-4MV" secondAttribute="bottom" constant="50" id="fle-J9-JId"/>
+                            <constraint firstItem="Iq6-Eg-tIs" firstAttribute="top" secondItem="s8b-20-Iw1" secondAttribute="bottom" constant="60" id="gMa-yF-rbg"/>
+                            <constraint firstAttribute="trailing" secondItem="ahx-4M-4MV" secondAttribute="trailing" constant="40" id="gl3-Dw-2Zz"/>
+                            <constraint firstItem="ahx-4M-4MV" firstAttribute="leading" secondItem="zbD-4Q-PRO" secondAttribute="leading" constant="40" id="mby-Yj-gow"/>
+                            <constraint firstItem="Iq6-Eg-tIs" firstAttribute="leading" secondItem="zbD-4Q-PRO" secondAttribute="leadingMargin" constant="40" id="ooq-Oc-k1q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iq6-Eg-tIs" secondAttribute="trailing" constant="40" id="xdc-51-Yda"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yw9-En-h0B"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JjK-nV-NZo"/>
+                    <connections>
+                        <outlet property="information" destination="Iq6-Eg-tIs" id="bbC-FB-gbA"/>
+                        <outlet property="nameOfView" destination="s8b-20-Iw1" id="c38-te-ZZx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sM4-NT-vlg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="tXX-PR-EzB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ynk-PT-kae"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="lion" width="150" height="150"/>
+    </resources>
+</document>
